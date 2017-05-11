@@ -16,7 +16,7 @@ function populatePage(stuff){
 	let obh = {ccakes : stuff};
 	let newDiv = document.createElement("div");
 	console.log("poopPage", newDiv, stuff);
-	newDiv.innerHTML = cakeTemplate(stuff);
+	newDiv.innerHTML = cakeTemplate(obh);
 	$("#cake-cards").append(newDiv);
 	eventStuff();
 }
